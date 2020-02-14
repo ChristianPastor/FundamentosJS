@@ -24,6 +24,7 @@ var jugarAlfutbol =3
 peso -= jugarAlfutbol
 console.log('Peso ');
 console.log(peso);
+git
 
 var precioDeVino = 200.3
 
