@@ -26,3 +26,5 @@ console.log(nameFull)
 /** Obtener los caracteres de un posicion inicial y final */
 var str = name.substr(1,2);
 console.log(str.toUpperCase());
+var finalChar = name.charAt(lengthName-1);
+console.log('la utima letra es ' + finalChar)
