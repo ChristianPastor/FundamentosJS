@@ -27,4 +27,16 @@ function printProfession(person){
     if(person.chef){
         console.log('Cocinero');
     }
+    if(person.engineer){
+        console.log('Ingeniero');
+    }
 }
+function printIsMoreThan(person){
+    if(person.age >= 18 ){
+        console.log(`${person.name} es mayor de edad, el tiene ${person.age}`);
+    }else{
+        console.log(`${person.name}  NO es mayor de edad, el tiene ${person.age}`);
+    }
+}
+printProfession(sacha)
+printIsMoreThan(sacha)
