@@ -28,16 +28,18 @@ for(var i =0; i< personas.length; i++){
 
 //filtrar
 
-//const esAlta = ({altura}) => altura > 1.8
-const esAlta = persona => persona.altura > 1.8
+
+//const esAlta = persona => persona.altura > 1.8
+const esAlta = ({altura}) => altura > 1.8
 const esBaja = ({altura}) => altura < 1.8
 var personaAltas = personas.filter(esAlta)
 var personaBajas = personas.filter(esBaja)
+
+console.log(personaAltas)
+console.log(personaBajas)
+
 //Tambien se puede hacer de esta forma 
 
 /*var personaAltas = personas.filter(function(persona){
     return persona.altura > 1.8
 })*/
-
-console.log(personaAltas)
-console.log(personaBajas)
