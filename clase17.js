@@ -43,3 +43,26 @@ console.log(personaBajas)
 /*var personaAltas = personas.filter(function(persona){
     return persona.altura > 1.8
 })*/
+
+
+//Aqui regreso un un nuevo objeto pero modificando el de personas
+/*const pasarAlturaACms = persona =>{
+    persona.altura *= 100
+    return persona
+}*/
+
+// const pasarAlturaACms = persona =>{
+//    return {
+//        ...persona,
+//        altura: persona.altura * 100
+//    }
+// }
+
+const pasarAlturaACms = persona => ({
+        ...persona,
+        altura: persona.altura * 100
+    })
+
+var personasCms = personas.map(pasarAlturaACms)
+
+console.log(personasCms)
